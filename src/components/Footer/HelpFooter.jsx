@@ -1,3 +1,7 @@
 export const HelpFooter = () => {
-  return <div>HelpFooter</div>;
+  return (
+    <div className="footer">
+      <h4>Footer</h4>
+    </div>
+  );
 };

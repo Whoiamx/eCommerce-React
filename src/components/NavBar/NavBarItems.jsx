@@ -68,6 +68,12 @@ export const NavBarItems = () => {
             fontSize="100"
           >
             <Tab
+              label="Inicio"
+              onClick={() => handleTabClick("/")} // Redirigimos al hacer click
+              {...a11yProps(0)}
+              sx={{ fontSize: "1rem", fontFamily: "Poppins" }}
+            />
+            <Tab
               label="Ofertas"
               onClick={() => handleTabClick("/offer")} // Redirigimos al hacer click
               {...a11yProps(0)}
