@@ -26,7 +26,7 @@
   align-self: center;
   width: 300px;
 }
-span {
+.max-letter {
   font-size: 2.5em;
   text-align: center;
   color: black;
@@ -70,16 +70,24 @@ span {
   height: 720px;
 }
 
-.cards-container-total {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0 auto;
-  gap: 4rem;
-  padding: 50px;
-  width: 1200px;
-}
-
 .footer {
   background-color: #fff;
+}
+
+.products-total-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-top: 6rem;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3.5rem;
+  gap: 15px;
 }

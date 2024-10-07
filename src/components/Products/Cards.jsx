@@ -31,7 +31,7 @@ export const Cards = ({ info }) => {
                 gutterBottom
                 variant="h5"
                 component="div"
-                fontSize={15}
+                fontSize={18}
                 textAlign={"center"}
               >
                 {el.title}
@@ -41,7 +41,7 @@ export const Cards = ({ info }) => {
                 gutterBottom
                 variant="h5"
                 component="div"
-                fontSize={15}
+                fontSize={18}
                 textAlign={"center"}
               >
                 <b>USD {el.price} </b>
@@ -52,7 +52,7 @@ export const Cards = ({ info }) => {
                 defaultValue={2}
                 max={6}
                 sx={{
-                  fontSize: "8px",
+                  fontSize: "15px",
                   "& .MuiRating-iconFilled": {
                     color: "#ffc107",
                   },
