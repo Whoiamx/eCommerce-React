@@ -5,30 +5,23 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { Error404 } from "../../helpers/Error404";
-import { styled } from "@mui/material/styles";
-import Box from "@mui/material/Box";
-import Rating from "@mui/material/Rating";
-import FavoriteIcon from "@mui/icons-material/Favorite";
-import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 
-const StyledRating = styled(Rating)({
-  "& .MuiRating-iconFilled": {
-    color: "#ff6d75",
-  },
-  "& .MuiRating-iconHover": {
-    color: "#ff3d47",
-  },
-});
+import Rating from "@mui/material/Rating";
+import { Loader } from "../../helpers/Loader";
 
 export const Cards = ({ info }) => {
-  console.log("Esto es desde el componente Cards", info);
   return (
     <>
       {info !== null ? (
         info.map((el) => (
-          <Card key={el.id} sx={{ maxWidth: 320 }}>
+          <Card
+            key={el.id}
+            sx={{
+              maxWidth: 320,
+            }}
+          >
             <CardMedia
-              sx={{ height: 300 }}
+              sx={{ height: 250 }}
               image={el.image}
               title="green iguana"
             />
@@ -84,7 +77,7 @@ export const Cards = ({ info }) => {
           </Card>
         ))
       ) : (
-        <Error404 />
+        <Loader />
       )}
     </>
   );
