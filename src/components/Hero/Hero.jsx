@@ -1,3 +1,9 @@
+import { ImageGaleria } from "./ImageGaleria";
+
 export const Hero = () => {
-  return <div>Hero</div>;
+  return (
+    <>
+      <ImageGaleria />
+    </>
+  );
 };

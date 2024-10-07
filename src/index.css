@@ -1,14 +1,9 @@
 :root {
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
-  line-height: 1.5;
-  font-weight: 400;
   background-color: #eee;
   font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 * {
@@ -17,16 +12,12 @@
   box-sizing: border-box;
 }
 
-h1 {
-  font-size: 2.5em;
-  text-align: center;
-}
 .header {
   background-color: #ffe600;
   height: 100px;
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 10px;
   align-items: center;
 }
 
@@ -34,4 +25,19 @@ h1 {
   height: 30px;
   align-self: center;
   width: 300px;
+}
+span {
+  font-size: 2.5em;
+  text-align: center;
+  color: black;
+  font-family: "Bungee Inline", sans-serif;
+  font-style: normal;
+}
+.hero-img {
+  width: 50%;
+}
+
+.favicon {
+  border-radius: 30px;
+  border: 1px solid black;
 }
