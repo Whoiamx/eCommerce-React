@@ -17,13 +17,13 @@ export const Cards = ({ info }) => {
           <Card
             key={el.id}
             sx={{
-              maxWidth: 320,
+              width: 310,
+              height: 420,
             }}
           >
             <CardMedia
-              sx={{ height: 250 }}
-              image={el.image}
-              title="green iguana"
+              sx={{ height: 250, backgroundSize: "220px 220px" }}
+              image={`${el.image}`}
             />
             <CardContent>
               <Typography
@@ -33,6 +33,8 @@ export const Cards = ({ info }) => {
                 component="div"
                 fontSize={18}
                 textAlign={"center"}
+                overflow={"hidden"}
+                textOverflow={"ellipsis"}
               >
                 {el.title}
               </Typography>

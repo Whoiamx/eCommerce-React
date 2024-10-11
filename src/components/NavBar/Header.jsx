@@ -16,7 +16,7 @@ export const Header = () => {
         variant="outlined"
         href="#outlined-buttons"
       >
-        {"Search "}
+        {"Buscar"}
       </Button>
     </div>
   );
