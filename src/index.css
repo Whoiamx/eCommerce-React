@@ -98,20 +98,27 @@
 form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
 }
 
 .form-container {
+  display: flex;
+  flex-direction: column;
   padding: 2rem;
   background-color: #ffe600;
+  gap: 2rem;
 }
 
 .form-title {
-  text-align: center;
+  color: black;
 }
 
 textarea {
   resize: none;
+}
+
+.input-form {
+  width: 50%;
 }
 
 /* ----------------------- Paragraf animation banner ----------------------- */

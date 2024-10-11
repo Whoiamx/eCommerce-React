@@ -3,7 +3,7 @@ import { CardsProductsTotal } from "./CardsProductsTotal";
 export const Products = () => {
   return (
     <div className="products-total-container">
-      <h3 className="product-total-title">Productos</h3>
+      <h3 className="product-total-title">Productos Destacados</h3>
       <Grid2
         sx={{ padding: 5, justifyContent: "center", alignItems: "center" }}
         size={7}
