@@ -104,6 +104,7 @@ form {
 .form-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 2rem;
   background-color: #ffe600;
   gap: 2rem;
@@ -112,13 +113,11 @@ form {
 .form-title {
   color: black;
 }
-
+.input-form {
+  width: 42vw;
+}
 textarea {
   resize: none;
-}
-
-.input-form {
-  width: 50%;
 }
 
 /* ----------------------- Paragraf animation banner ----------------------- */
@@ -141,4 +140,8 @@ textarea {
 
 .container-banner-text {
   background-color: #2e7d32;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
 }
