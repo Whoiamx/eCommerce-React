@@ -113,3 +113,25 @@ form {
 textarea {
   resize: none;
 }
+
+/* ----------------------- Paragraf animation banner ----------------------- */
+.banner-text {
+  display: inline-block;
+  color: #fff;
+  background-color: #2e7d32;
+
+  animation: move 25s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(100%, 0);
+  }
+}
+
+.container-banner-text {
+  background-color: #2e7d32;
+}

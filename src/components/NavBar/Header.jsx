@@ -6,7 +6,11 @@ export const Header = () => {
     <div className="header">
       <span className="max-letter">Kick</span>
       <img className="favicon" src={favicon} />
-      <input id="input-search" type="search"></input>
+      <input
+        placeholder="Busca aquello que deseas..."
+        id="input-search"
+        type="search"
+      ></input>
       <Button
         sx={{
           backgroundColor: "#2e7d32",
