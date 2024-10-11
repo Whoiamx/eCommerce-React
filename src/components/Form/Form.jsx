@@ -1,13 +1,15 @@
-import { Button, TextField } from "@mui/material";
+import { Button, Modal, TextField } from "@mui/material";
 import { Formik } from "formik";
+import { ModalSendForm } from "./ModalSendForm";
 
 export const Form = () => {
   return (
     <>
       <Formik
-        initialValues={{ email: "", nombre: "", apellido: "" }}
+        initialValues={{ email: "", name: "", phone: "" }}
         validate={(values) => {
           const errors = {};
+
           if (!values.email) {
             errors.email = "El dato es obligatorio";
           } else if (
@@ -19,9 +21,8 @@ export const Form = () => {
         }}
         onSubmit={(values, { setSubmitting }) => {
           setTimeout(() => {
-            alert(JSON.stringify(values, null, 2));
             setSubmitting(false);
-          }, 400);
+          }, 600);
         }}
       >
         {({
@@ -37,11 +38,10 @@ export const Form = () => {
             <TextField
               required
               label="Nombre completo"
-              type="email"
-              name="email"
+              type="text"
+              name="firstname"
               onChange={handleChange}
               onBlur={handleBlur}
-              value={values.email}
               className="input-form"
               sx={{ backgroundColor: "white" }}
             />
@@ -60,7 +60,7 @@ export const Form = () => {
             <TextField
               required
               type="phone"
-              name="text"
+              name="phone"
               onChange={handleChange}
               onBlur={handleBlur}
               className="input-form"
@@ -74,6 +74,7 @@ export const Form = () => {
               className="input-form"
               sx={{ backgroundColor: "white" }}
             />
+            {isSubmitting ? <ModalSendForm /> : null}
             <Button
               className="input-form"
               type="submit"
