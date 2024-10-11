@@ -5,7 +5,6 @@ const localCache = {};
 export const useFetch = (url) => {
   const [state, setState] = useState({
     data: null,
-    isLoading: true,
     hasError: false,
     error: null,
   });
@@ -25,7 +24,6 @@ export const useFetch = (url) => {
 
   const getFetch = async () => {
     if (localCache[url]) {
-      console.log("Usando cache");
       setState({
         data: localCache[url],
         isLoading: false,
@@ -36,6 +34,7 @@ export const useFetch = (url) => {
     }
 
     setLoadingState();
+
     const response = await fetch(url);
 
     // MANEJO DE ERRORES DE LA PETICION FETCH
